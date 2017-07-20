@@ -15,6 +15,8 @@ def main(_):
   tf.set_random_seed(config.random_seed)
 
   trainer = Trainer(config, rng)
+
+  import ipdb; ipdb.set_trace()
   save_config(config.model_dir, config)
 
   if config.is_train:
